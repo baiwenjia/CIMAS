@@ -9,21 +9,12 @@ We use the [MIRTK](https://github.com/BioMedIA/MIRTK) library for performing ima
  
 ## How to run
 To download data ...
+Compile MIRTK
+Add binaries to path (compiled under Ubuntu 16.04)
 To run ...
 
-binaries:
-splitvolume
-detect_ES_frame
-prreg
-auto_crop_image
-region
-label_fusion
-resample
-surface_smooth
-
-
 ## How to cite
-The pipeline is developed with a collaborative effort by computing people (Dr Wenjia Bai, Dr Wenzhe Shi, Prof. Daniel Rueckert) at Biomedical Image Analysis Group at Department of Computing, Imperial College London and imaging people (Dr Declan O'Regan, Dr Antonio de Marvao, Dr Tim Dawes, and Prof. Stuart Cook) at the MRC Clinical Sciences Centre, Hammersmith Hospital, Imperial College London. In the event you find the pipeline or a certain part of it useful, please consider giving appropriate credit to it by citing one or some of the following relevant papers, which describes the segmentation method [1], image registration method [2], the atlas image acquisition protocol and clinical background [3,4]. Thank you.
+The pipeline is developed with a collaborative effort by computing people (Dr Wenjia Bai, Dr Wenzhe Shi and Prof. Daniel Rueckert) at Biomedical Image Analysis Group at Department of Computing, Imperial College London and imaging people (Dr Declan O'Regan, Dr Antonio de Marvao, Dr Tim Dawes and Prof. Stuart Cook) at the MRC Clinical Sciences Centre, Hammersmith Hospital, Imperial College London. In the event you find the pipeline or a certain part of it useful, please consider giving appropriate credit to it by citing one or some of the following relevant papers, which describes the segmentation method [1], image registration method [2], the atlas image acquisition protocol and clinical background [3,4]. Thank you.
 
 [1] W. Bai, W. Shi, D.P. O’Regan, T. Tong, H. Wang, S. Jamil-Copley, N.S. Peters and D. Rueckert. A probabilistic patch-based label fusion model for multi-atlas segmentation with registration refinement: Application to cardiac MR images. IEEE Transactions on Medical Imaging, 32(7):1302-1315, 2013.
 

@@ -19,4 +19,9 @@ if __name__ == '__main__':
     landmarks_name = sys.argv[2]
     output_dir = sys.argv[3]
     cimas.segment_data(image_name, landmarks_name, output_dir, \
-                       config.atlas_root, config.atlas_list[:5], config.template_dir, config.par_dir, remove_temp=False)
+                       config.atlas_root, config.atlas_list, config.template_dir, config.par_dir)
+
+    # # For debug
+    # n_atlas = 5
+    # cimas.segment_data(image_name, landmarks_name, output_dir, \
+    #                    config.atlas_root, config.atlas_list[:n_atlas], config.template_dir, config.par_dir, remove_temp=False)
