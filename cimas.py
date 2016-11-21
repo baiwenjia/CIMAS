@@ -1,5 +1,5 @@
 """
-Cardiac multi-atlas segmentation pipeline
+Cardiac image multi-atlas segmentation pipeline
 
 Author: Wenjia Bai
 First created: 2015.03.31

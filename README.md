@@ -1,8 +1,8 @@
-# CaMAS
-Cardiac Multi-Atlas Segmentation (CaMAS)
+# CIMAS
+Cardiac Image Multi-Atlas Segmentation (CIMAS)
 
-## What is CaMAS
-CaMAS is a pipeline for cardiac MR image segmentation using multi-atlas segmentation method. It assumes that the target image (image under segmentation) shares a similar anatomy as the atlas image (image with corresponding segmentation or label map) and the difference between target and atlas can be described by a spatial transformation. To segment the target image, image registration is performed to estimate this spatial transformation and then atlas label map is propagated onto the target image to form the segmentation. To improve robustness and accuracy, multiple atlases can be used in this process. Each atlas acts as an expert and provides a segmentation result. The segmentation results from multiple atlases are combined in a label fusion process.
+## What is CIMAS
+CIMAS is a pipeline for cardiac MR image segmentation using multi-atlas segmentation method. It assumes that the target image (image under segmentation) shares a similar anatomy as the atlas image (image with corresponding segmentation or label map) and the difference between target and atlas can be described by a spatial transformation. To segment the target image, image registration is performed to estimate this spatial transformation and then atlas label map is propagated onto the target image to form the segmentation. To improve robustness and accuracy, multiple atlases can be used in this process. Each atlas acts as an expert and provides a segmentation result. The segmentation results from multiple atlases are combined in a label fusion process.
 
 ## Dependencies
 We use the [MIRTK](https://github.com/BioMedIA/MIRTK) library for performing image registration and 20 3D MR images acquired from Hammersmith Hospital, Imperial College London as the atlas set. The 20 atlases have been manually segmented by experienced radiologists. To initialise image registration, we use six landmarks and perform point-based registration, which is then followed by image-based registration. The landmarks defined as in the [Placing the landmarks](http://wp.doc.ic.ac.uk/wbai/data) section and they are manually selected using the [rview](https://www.doc.ic.ac.uk/~dr/software/download.html) software.
