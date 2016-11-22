@@ -21,7 +21,7 @@ if __name__ == '__main__':
     cimas.segment_data(image_name, landmarks_name, output_dir, \
                        config.atlas_root, config.atlas_list, config.template_dir, config.par_dir)
 
-    # # For debug
+    # # Reduce the number of atlases and keep the temporary files for debugging purposes
     # n_atlas = 5
     # cimas.segment_data(image_name, landmarks_name, output_dir, \
     #                    config.atlas_root, config.atlas_list[:n_atlas], config.template_dir, config.par_dir, remove_temp=False)
