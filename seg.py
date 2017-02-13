@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 """
 Cardiac image multi-atlas segmentation pipeline
 
@@ -7,6 +9,7 @@ Last modified: 2016.11.21 by wbai
 """
 
 import sys
+sys.path.append('/vol/medic02/users/wbai/git/CIMAS')
 import cimas, config
 
 
